@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Calc_style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- <div id="display">12</div> -->
+        <input type="text" name="display" id="result">
+        <div class="keys">
+            <input type="button" value="(" onclick="display('&lpar;')">
+            <input type="button" value=")" onclick="display('&rpar;')">
+            <input type="button" value="ans" onclick="display('NaN')" id="ans">
+            <input type="button" value="del" onclick="delet()" id="del">
+            <input type="button" value="X" onclick="clearScreen()" id="clear">
+            <input type="button" value="7" onclick="display('7')">
+            <input type="button" value="8" onclick="display('8')">
+            <input type="button" value="9" onclick="display('9')">
+            <input type="button" value="%" onclick="display('%')">
+            <input type="button" value="√" onclick="display('√')">
+            <input type="button" value="4" onclick="display('4')">
+            <input type="button" value="5" onclick="display('5')">
+            <input type="button" value="6" onclick="display('6')">
+            <input type="button" value="*" onclick="display('*')">
+            <input type="button" value="/" onclick="display('/')">
+            <input type="button" value="1" onclick="display('1')">
+            <input type="button" value="2" onclick="display('2')">
+            <input type="button" value="3" onclick="display('3')">
+            <input type="button" value="+" onclick="display('+')">
+            <input type="button" value="-" onclick="display('-')">
+            <input type="button" value="." onclick="display('.')">
+            <input type="button" value="0" onclick="display('0')">
+            <input type="button" value="ENTER" onclick="calculate()" id="enter">
+        </div>
+    </div>
+    <div class="contact">Ankur Raj
+        <a href="https://www.linkedin.com/in/ankurrajsahu/" target="_blank"><img src="images.png" alt="Linkedin"
+                class="linkedin"></a>
+        <a href="https://twitter.com/riyalankur" target="_blank"><img src="x.png" alt="X" class="x"></a>
+        <a href="https://github.com/ankurraj007" target="_blank"><img src="github.png" alt="GitHub" class="github"></a>
+
+    </div>
+    <script src="Calc_script.js" async defer></script>
+</body>
+
+</html>
